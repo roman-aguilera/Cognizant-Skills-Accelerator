@@ -1,5 +1,6 @@
 
-from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trainer, TrainingArguments from datasets import load_dataset
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trainer, TrainingArguments 
+from datasets import load_dataset
 model_name = "distilbert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2) # Prepare the dataset
