@@ -51,12 +51,11 @@ trainer.train()
 #Save your Fine-Tuned model and tokenizer for later use:
 model.save_pretrained("./fine_tuned_model")
 tokenizer.save_pretrained("./fine_tuned_model")
-3. Evaluating Fine-Tuned Models Using Relevant Metrics
-Metrics to Use
-
-    Accuracy: Percentage of correct predictions.
-    F1-Score: Balances precision and recall for overall performance.
-    Perplexity: Useful for generative tasks.
+#3. Evaluating Fine-Tuned Models Using Relevant Metrics
+#Metrics to Use
+    #Accuracy: Percentage of correct predictions.
+    #F1-Score: Balances precision and recall for overall performance.
+    #Perplexity: Useful for generative tasks.
 
 #Evaluate the Model
 #Using Trainer:
