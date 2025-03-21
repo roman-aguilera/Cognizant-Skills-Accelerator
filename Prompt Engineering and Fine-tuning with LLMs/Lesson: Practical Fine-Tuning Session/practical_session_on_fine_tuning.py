@@ -26,7 +26,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 from datasets import load_dataset
 dataset = load_dataset("imdb")
 def preprocess_function(examples):
-return tokenizer(examples['text'], truncation=True, padding=True)
+    return tokenizer(examples['text'], truncation=True, padding=True)
 tokenized_dataset = dataset.map(preprocess_function, batched=True)
 
 
